@@ -1,0 +1,8 @@
+﻿@model ShopBridge.Models.Item
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.Name</h2>
+<h4>Price: @Model.Price</h4>
+@Html.ActionLink("Edit", "Edit", "Items", new { id = Model.Id }, null)
